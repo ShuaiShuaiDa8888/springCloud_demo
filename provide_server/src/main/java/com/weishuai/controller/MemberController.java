@@ -12,7 +12,7 @@ import java.util.List;
 @RestController
 public class MemberController {
 
-    @GetMapping(value = "getMemberAll")
+    @GetMapping(value = "/getMemberAll")
     public List<String> getMemberAll(){
         List<String> memberList = new ArrayList<>();
         memberList.add("zhangsan");
