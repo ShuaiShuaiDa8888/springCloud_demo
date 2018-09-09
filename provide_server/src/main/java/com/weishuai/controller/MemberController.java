@@ -26,4 +26,9 @@ public class MemberController {
 
         return memberList;
     }
+
+    @GetMapping(value = "/getMemberServiceApi")
+    public String getMemberApi(){
+        return "this is member project";
+    }
 }

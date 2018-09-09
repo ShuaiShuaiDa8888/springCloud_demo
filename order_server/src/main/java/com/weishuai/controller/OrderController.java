@@ -2,6 +2,7 @@ package com.weishuai.controller;
 
 import com.weishuai.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,5 +22,10 @@ public class OrderController {
         System.out.println("开始调用会员服务");
         List<String> orderUserAll = orderService.getOrderUserAll();
         return orderUserAll;
+    }
+
+    @GetMapping(value = "/getOrderServiceApi")
+    public String getOrderServiceApi(){
+        return "this is order project";
     }
 }
