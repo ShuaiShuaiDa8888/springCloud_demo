@@ -1,5 +1,6 @@
 package com.weishuai.controller;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,12 +13,16 @@ import java.util.List;
 @RestController
 public class MemberController {
 
+    @Value("${server.port}")
+    private String serverPort;
+
     @GetMapping(value = "/getMemberAll")
     public List<String> getMemberAll(){
         List<String> memberList = new ArrayList<>();
         memberList.add("zhangsan");
         memberList.add("Lisi");
         memberList.add("wangwu");
+        memberList.add("serverPort:" + serverPort);
 
         return memberList;
     }
