@@ -7,6 +7,10 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
+/**
+ * 服务消费者
+ * 订单服务
+ */
 @EnableEurekaClient
 @SpringBootApplication
 public class OrderServerApplication {
