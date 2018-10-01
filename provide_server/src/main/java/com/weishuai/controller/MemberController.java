@@ -16,19 +16,23 @@ public class MemberController {
     @Value("${server.port}")
     private String serverPort;
 
+    int count = 0;
+
     @GetMapping(value = "/getMemberAll")
-    public List<String> getMemberAll(){
+    public List<String> getMemberAll() {
+        count++;
         List<String> memberList = new ArrayList<>();
         memberList.add("zhangsan");
         memberList.add("Lisi");
         memberList.add("wangwu");
+        memberList.add(String.valueOf(count));
         memberList.add("serverPort:" + serverPort);
 
         return memberList;
     }
 
     @GetMapping(value = "/getMemberServiceApi")
-    public String getMemberApi(){
+    public String getMemberApi() {
         return "this is member project";
     }
 }
