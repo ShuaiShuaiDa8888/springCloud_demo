@@ -7,6 +7,7 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 /**
  * 分布式配置中心
  * server端
+ * (控制台会报错，但不会影响使用)
  */
 @SpringBootApplication
 @EnableConfigServer
