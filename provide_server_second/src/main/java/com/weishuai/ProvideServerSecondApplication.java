@@ -2,10 +2,9 @@ package com.weishuai;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 /**
- * 服务提供者(二)
- * 会员服务
+ * feign客户端配合Hystrix断路器实现服务降级
+ * 配合order-server-feign-degrade做压力测试
  */
 @SpringBootApplication
 public class ProvideServerSecondApplication {

@@ -7,6 +7,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * feign客户端配合Hystrix断路器实现服务降级
+ * 配合provide_server做压力测试
  */
 @SpringBootApplication
 @EnableEurekaClient

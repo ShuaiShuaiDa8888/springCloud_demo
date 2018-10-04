@@ -8,8 +8,8 @@ import java.util.List;
 /**
  * Created by WS on 2018/10/4.
  */
-@FeignClient(value = "service-member")
-public interface MemberFeign {
+@FeignClient(value = "service-member-second")
+public interface MemberFeignDegrade {
 
     @GetMapping(value = "/getMemberAll")
     List<String> getToOrderMemberAll();

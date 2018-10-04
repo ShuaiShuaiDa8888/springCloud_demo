@@ -3,7 +3,7 @@ microservice、springboot、springCloud
 
 Eureka注册中心：springCloud_demo
 服务提供者一（会员服务）：provide_server
-服务提供者二（会员服务）：provide_server-second
+服务提供者二（会员服务）：provide_server_second
 服务消费者（订单服务）：order_server
 Zuul服务接口网关：newzuul
 分布式配置中心server端：config-server

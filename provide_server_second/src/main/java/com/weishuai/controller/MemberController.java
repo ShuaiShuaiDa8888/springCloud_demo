@@ -22,11 +22,11 @@ public class MemberController {
     public List<String> getMemberAll() {
         count++;
         /* 配合feign-degrade和Hystrix实现服务降级 */
-//        try {
-//            Thread.sleep(3000);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         List<String> memberList = new ArrayList<>();
         memberList.add("zhangsan");
@@ -35,6 +35,7 @@ public class MemberController {
         memberList.add(String.valueOf(count));
         memberList.add("serverPort:" + serverPort);
 
+        System.out.println(count);
         return memberList;
     }
 

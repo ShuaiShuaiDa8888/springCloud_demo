@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.weishuai</groupId>
-	<artifactId>provide_server-second</artifactId>
+	<artifactId>provide_server_second</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>provide_server-second</name>
+	<name>provide_server_second</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -28,7 +28,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-config-server</artifactId>
+			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
 
 		<dependency>
