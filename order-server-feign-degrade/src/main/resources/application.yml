@@ -4,6 +4,8 @@ eureka:
       defaultZone: http://localhost:8888/eureka/
 server:
   port: 8766
+  tomcat: #tomcat最大线程数
+    max-threads: 50
 spring:
   application:
     name: service-order-feign-degrade
