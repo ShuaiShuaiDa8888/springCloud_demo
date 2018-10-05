@@ -23,7 +23,7 @@ public class MemberController {
         count++;
         /* 配合feign-degrade和Hystrix实现服务降级 */
         try {
-            Thread.sleep(500);
+            Thread.sleep(1500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
